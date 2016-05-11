@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--我的-->
@@ -16,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="O8Y-4T-J7Z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="89" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="RyM-Ot-tg4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RyM-Ot-tg4" firstAttribute="top" secondItem="O8Y-4T-J7Z" secondAttribute="topMargin" id="3yN-IN-yYt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RyM-Ot-tg4" secondAttribute="trailing" constant="-20" id="JYy-XE-m6j"/>
+                            <constraint firstItem="RyM-Ot-tg4" firstAttribute="leading" secondItem="O8Y-4T-J7Z" secondAttribute="leadingMargin" constant="-20" id="gr8-cN-1qR"/>
+                            <constraint firstItem="RyM-Ot-tg4" firstAttribute="bottom" secondItem="O8Y-4T-J7Z" secondAttribute="bottomMargin" id="xQY-Ge-McA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="我的" id="l1a-q7-ovJ"/>
                 </viewController>

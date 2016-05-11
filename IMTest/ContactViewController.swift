@@ -28,12 +28,12 @@ class ContactViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     //创建一个分区
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     //返回的列表行数
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tableData.count
     }
    //每行的高度
