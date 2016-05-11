@@ -44,7 +44,7 @@
         <scene sceneID="Fb0-U6-YD5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1GZ-0h-Xzl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通讯录" id="geL-wj-Urm"/>
+                    <tabBarItem key="tabBarItem" title="通讯录" image="contact" selectedImage="contact_selected" id="geL-wj-Urm"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZlP-10-Ub9">
@@ -61,4 +61,8 @@
             <point key="canvasLocation" x="351" y="957"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="contact" width="22" height="22"/>
+        <image name="contact_selected" width="22" height="22"/>
+    </resources>
 </document>

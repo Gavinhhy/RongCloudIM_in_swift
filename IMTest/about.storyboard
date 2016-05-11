@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="1185" y="-1369"/>
         </scene>
-        <!--关于-->
+        <!--我的-->
         <scene sceneID="Anf-Xx-0FW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Buf-OE-VIM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关于" id="x8N-gp-d9x"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="me" selectedImage="me_selected" id="x8N-gp-d9x"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ovz-d1-eWc">
@@ -45,4 +45,8 @@
             <point key="canvasLocation" x="351" y="-1369"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="me" width="22" height="22"/>
+        <image name="me_selected" width="22" height="22"/>
+    </resources>
 </document>

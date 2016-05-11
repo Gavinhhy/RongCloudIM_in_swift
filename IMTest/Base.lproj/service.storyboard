@@ -9,7 +9,7 @@
         <scene sceneID="77O-w2-o1S">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="42n-FR-z4q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="客服" id="IPE-ug-qfL"/>
+                    <tabBarItem key="tabBarItem" title="客服" image="service" selectedImage="serivice_selected" id="IPE-ug-qfL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7EO-3D-EwL">
@@ -58,4 +58,8 @@
             <point key="canvasLocation" x="1072" y="-584"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="serivice_selected" width="22" height="22"/>
+        <image name="service" width="22" height="22"/>
+    </resources>
 </document>

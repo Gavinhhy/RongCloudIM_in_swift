@@ -49,11 +49,11 @@
             </objects>
             <point key="canvasLocation" x="1962" y="159"/>
         </scene>
-        <!--聊天-->
+        <!--消息-->
         <scene sceneID="kmf-00-mcd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lC6-Xb-863" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="聊天" id="zjO-42-pa7"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="message" selectedImage="message_selected" id="zjO-42-pa7"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOi-kK-ncr">
@@ -70,4 +70,8 @@
             <point key="canvasLocation" x="351" y="159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="message" width="22" height="22"/>
+        <image name="message_selected" width="22" height="22"/>
+    </resources>
 </document>
