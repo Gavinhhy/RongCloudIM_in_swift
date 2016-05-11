@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="42n-FR-z4q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--客服-->
+        <scene sceneID="77O-w2-o1S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="42n-FR-z4q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="客服" id="IPE-ug-qfL"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7EO-3D-EwL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZsJ-xI-7rc" kind="relationship" relationship="rootViewController" id="Qgx-vn-hMZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5SW-0K-a19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="-584"/>
+        </scene>
+        <!--客服-->
+        <scene sceneID="FaC-lt-bmi">
+            <objects>
+                <viewController id="ZsJ-xI-7rc" customClass="CustomServiceViewController" customModule="IMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rB4-Uj-EL7"/>
+                        <viewControllerLayoutGuide type="bottom" id="buT-Nf-qkU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pNh-fQ-EKU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-Vd-Kjp">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="chatService:" destination="ZsJ-xI-7rc" eventType="touchUpInside" id="Ylw-ed-zle"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f3C-Vd-Kjp" firstAttribute="centerX" secondItem="pNh-fQ-EKU" secondAttribute="centerX" id="MZK-od-onh"/>
+                            <constraint firstItem="f3C-Vd-Kjp" firstAttribute="centerY" secondItem="pNh-fQ-EKU" secondAttribute="centerY" id="a0j-Q7-uc4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="客服" id="gnI-Gw-9ZY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teM-Dm-DS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="-584"/>
+        </scene>
+    </scenes>
+</document>

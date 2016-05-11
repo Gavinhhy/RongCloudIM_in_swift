@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (3.3.1)
+  - HanekeSwift (0.10.1)
+  - RongCloudIMKit (2.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HanekeSwift
+  - RongCloudIMKit
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  RongCloudIMKit: 3d8473f022c7588db80ef81caf0208e5c2fa4789
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1GZ-0h-Xzl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--联系人-->
+        <scene sceneID="muq-kK-bQK">
+            <objects>
+                <viewController id="hZJ-Ih-Pbm" customClass="ContactViewController" customModule="IMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ElR-Fe-H1L"/>
+                        <viewControllerLayoutGuide type="bottom" id="1u2-NV-wZ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eSk-Jl-8td">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-2i-2yf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1u2-NV-wZ8" firstAttribute="top" secondItem="gNo-2i-2yf" secondAttribute="bottom" id="0wD-lO-qx0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gNo-2i-2yf" secondAttribute="trailing" constant="-20" id="JjP-3c-aFu"/>
+                            <constraint firstItem="gNo-2i-2yf" firstAttribute="leading" secondItem="eSk-Jl-8td" secondAttribute="leadingMargin" constant="-20" id="Yyc-qs-IqW"/>
+                            <constraint firstItem="gNo-2i-2yf" firstAttribute="top" secondItem="eSk-Jl-8td" secondAttribute="topMargin" id="lc1-Pq-cJ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="联系人" id="IsV-vo-Wf5"/>
+                    <connections>
+                        <outlet property="tableView" destination="gNo-2i-2yf" id="KTV-5O-BRV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wau-lc-YjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="951"/>
+        </scene>
+        <!--通讯录-->
+        <scene sceneID="Fb0-U6-YD5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1GZ-0h-Xzl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通讯录" id="geL-wj-Urm"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZlP-10-Ub9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hZJ-Ih-Pbm" kind="relationship" relationship="rootViewController" id="jZC-OU-zvO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Bf-FJ-gCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="957"/>
+        </scene>
+    </scenes>
+</document>
