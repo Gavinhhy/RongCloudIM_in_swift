@@ -46,16 +46,11 @@ class ContactViewController: UIViewController,UITableViewDelegate,UITableViewDat
         -> UITableViewCell {
         let cell:ContactTableViewCell = tableView.dequeueReusableCellWithIdentifier("contactCell") as! ContactTableViewCell
         let item = self.tableData[indexPath.row]
-        print("打印行数")
-        print(self.tableData.count)
-        print(indexPath.row)
         
         cell.name.text = item["name"]
         let avatarUrl = item["avatar"]
         let url = NSURL(string: avatarUrl!)
         cell.avatar.hnk_setImageFromURL(url!)
-        print("打印－－－")
-        print(item)
         
         return cell
     }
