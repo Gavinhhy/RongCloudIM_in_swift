@@ -18,21 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-2i-2yf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-2i-2yf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="TGu-WE-GCq">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yNo-ka-QgS">
+                                        <rect key="frame" x="0.0" y="136" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yNo-ka-QgS" id="vIG-7f-jIM">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gNo-2i-2yf" firstAttribute="top" secondItem="eSk-Jl-8td" secondAttribute="topMargin" id="0RS-7i-Zr2"/>
                             <constraint firstItem="1u2-NV-wZ8" firstAttribute="top" secondItem="gNo-2i-2yf" secondAttribute="bottom" id="0wD-lO-qx0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gNo-2i-2yf" secondAttribute="trailing" constant="-20" id="8cf-CJ-cTo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gNo-2i-2yf" secondAttribute="trailing" constant="-20" id="JjP-3c-aFu"/>
+                            <constraint firstItem="gNo-2i-2yf" firstAttribute="leading" secondItem="eSk-Jl-8td" secondAttribute="leadingMargin" constant="-20" id="OTc-wJ-FdG"/>
+                            <constraint firstItem="1u2-NV-wZ8" firstAttribute="top" secondItem="gNo-2i-2yf" secondAttribute="bottom" id="TjE-02-bzg"/>
                             <constraint firstItem="gNo-2i-2yf" firstAttribute="leading" secondItem="eSk-Jl-8td" secondAttribute="leadingMargin" constant="-20" id="Yyc-qs-IqW"/>
-                            <constraint firstItem="gNo-2i-2yf" firstAttribute="top" secondItem="eSk-Jl-8td" secondAttribute="topMargin" id="lc1-Pq-cJ8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="联系人" id="IsV-vo-Wf5"/>
                     <connections>
+                        <outlet property="searchBar" destination="TGu-WE-GCq" id="TPf-dM-FbG"/>
                         <outlet property="tableView" destination="gNo-2i-2yf" id="KTV-5O-BRV"/>
                     </connections>
                 </viewController>
@@ -53,7 +72,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hZJ-Ih-Pbm" kind="relationship" relationship="rootViewController" id="jZC-OU-zvO"/>
+                        <segue destination="hZJ-Ih-Pbm" kind="relationship" relationship="rootViewController" id="1kU-1w-uNR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Bf-FJ-gCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
